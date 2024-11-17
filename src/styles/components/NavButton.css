@@ -1,0 +1,17 @@
+.btn_sea,
+.btn_sho,
+.btn_use {
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--text-dark);
+}
+
+.btn_sea:hover,
+.btn_sho:hover,
+.btn_use:hover {
+  color: var(--accent);
+}

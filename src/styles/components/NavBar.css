@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  isolation: isolate;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9; /* Siempre por encima de los dropdowns */
+  background-color: rgba(255, 255, 255); /* Fondo translúcido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_links > li {
+  position: relative;
+}
+
+.nav_links > li:hover .dropdown_content {
+  display: flex;
+}
+
+.nav_btns {
+  display: flex;
+  gap: 1rem;
+}
+
+
