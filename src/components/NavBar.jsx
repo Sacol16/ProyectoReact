@@ -27,7 +27,7 @@ const NavBar = () => {
     <nav>
       <div className="nav_header">
         <div className="nav_logo">
-          <a href="#">Cozyluxe</a>
+          <a href="/home">Cozyluxe</a>
         </div>
         <div className="nav_menu_btn" id="menu-btn" onClick={handleMenuClick}>
           <i className={menuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
