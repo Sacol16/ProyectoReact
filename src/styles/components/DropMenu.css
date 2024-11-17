@@ -1,11 +1,10 @@
 .dropdown_content {
     display: none;
     position: fixed;
-    top: 60px;
+    top: 65px;
     left: 0;
     width: 100vw;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
     padding: 2rem;
     z-index: 10;
     justify-content: space-between;
