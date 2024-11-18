@@ -34,11 +34,11 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={user ? <Navigate to="/profile" /> : <Home />}
+            element={user ? <Navigate to="/Home" /> : <Home />}
           />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Regist />} />
-          <Route path="/profile" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/home" element={<Home />} />
           <Route path="/living" element={<Living />} />
         </Routes>

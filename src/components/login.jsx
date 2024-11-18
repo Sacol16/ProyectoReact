@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { auth } from "./firebase";
 import { toast } from "react-toastify";
 import SignInwithGoogle from "./signInWIthGoogle";
-import { Link } from "react-router-dom";
+
 import "../styles/components/index.css"
 
 function Login() {
@@ -15,7 +15,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      window.location.href = "/profile";
+      window.location.href = "/home";
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
@@ -55,11 +55,11 @@ function Login() {
       </div>
 
       <div className="d-grid">
-        <Link to="/home">
+        
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        </Link>
+        
       </div>
       <p className="forgot-password text-right">
         New user <a href="/register">Register Here</a>

@@ -5,8 +5,14 @@ import { Link } from "react-router-dom";
 //import '../styles/styles.css';
 import "../styles/styles.css"
 
+import { auth, db } from './firebase'; // Importa Firebase
+import { doc, onSnapshot } from "firebase/firestore";
+import { onAuthStateChanged } from "firebase/auth";
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [userName, setUserName] = useState("User");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     const link = document.createElement('link');
@@ -17,6 +23,34 @@ const NavBar = () => {
     return () => {
       document.head.removeChild(link);
     };
+  }, []);
+
+  useEffect(() => {
+    const unsubscribeAuth = onAuthStateChanged(auth, (user) => {
+      setIsAuthenticated(!!user);
+
+      if (user) {
+        const userRef = doc(db, "Users", user.uid);
+        const unsubscribeUser = onSnapshot(userRef, (docSnap) => {
+          if (docSnap.exists()) {
+            const userData = docSnap.data();
+            setUserName(userData.firstName);
+          } else {
+            console.log("User document does not exist!");
+          }
+        }, (error) => {
+          console.error("Error fetching user data in real-time:", error);
+        });
+
+        // Cleanup Firestore listener when the user logs out
+        return () => unsubscribeUser();
+      } else {
+        setUserName("User"); // Default value if no user is authenticated
+      }
+    });
+
+    // Cleanup Auth listener
+    return () => unsubscribeAuth();
   }, []);
 
   const handleMenuClick = () => {
@@ -57,7 +91,8 @@ const NavBar = () => {
           hoverIcon="ri-shopping-bag-fill"
           className="btn_sho"
         />
-        <Link to="/login">
+        <h6>{userName}</h6> {/* Aquí se muestra el nombre del usuario */}
+        <Link to={isAuthenticated ? "/profile" : "/login"}>
         <NavButton
         defaultIcon="ri-user-line"
         hoverIcon="ri-user-fill"
