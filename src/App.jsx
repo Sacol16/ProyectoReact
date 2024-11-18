@@ -20,6 +20,7 @@ import { useState } from "react";
 import { auth } from "./components/firebase";
 import Regist from "./components/Regist";
 import Living from "./components/Living";
+import Bedroom from "./components/Bedroom";
 
 function App() {
   const [user, setUser] = useState();
@@ -41,6 +42,7 @@ function App() {
           <Route path="/profile" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/living" element={<Living />} />
+          <Route path="/bedroom" element={<Bedroom />} />
         </Routes>
 
       </div>

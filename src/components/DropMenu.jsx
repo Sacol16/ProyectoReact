@@ -7,9 +7,9 @@ const menuData = {
     {
       title: 'SEATING',
       items: [
-        'The Art of Upholstery',
-        'In Stock Living',
-        'Sectionals',
+        'Sofa',
+        'Chairs',
+        'Sunroom',
       ],
     },
     {
