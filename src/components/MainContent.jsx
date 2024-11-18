@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/MainContent.css';
 
 const MainContent = () => {
@@ -14,7 +15,9 @@ const MainContent = () => {
         <div className="hero-overlay">
           <p className="hero-subtitle">COZYLUXE QUALITY WOOD</p>
           <h1 className="hero-title">STYLE FOR THE SEASON</h1>
-          <button className="hero-button">SHOP LIVING</button>
+          <Link to="/living" className="hero-button">
+            SHOP LIVING
+          </Link>
         </div>
       </div>
 
@@ -28,7 +31,9 @@ const MainContent = () => {
         <div className="hero-overlay">
           <p className="hero-subtitle">ELEVATE YOUR DINING</p>
           <h1 className="hero-title">DINING IN STYLE</h1>
-          <button className="hero-button">SHOP DINING</button>
+          <Link to="/dining" className="hero-button">
+            SHOP DINING
+          </Link>
         </div>
       </div>
 
@@ -42,7 +47,9 @@ const MainContent = () => {
         <div className="hero-overlay">
           <p className="hero-subtitle">REST IN LUXURY</p>
           <h1 className="hero-title">YOUR DREAM BEDROOM</h1>
-          <button className="hero-button">SHOP BEDROOM</button>
+          <Link to="/bedroom" className="hero-button">
+            SHOP BEDROOM
+          </Link>
         </div>
       </div>
 
@@ -50,13 +57,15 @@ const MainContent = () => {
       <div className="hero-section">
         <img
           src="https://highemporium.com/cdn/shop/articles/a_hallway_with_recessed_lighting.webp?v=1710682261&width=1100"
-          alt="<lighting> Space"
+          alt="Lighting Space"
           className="hero-image"
         />
         <div className="hero-overlay">
           <p className="hero-subtitle">ENJOY THE LIGHTING</p>
           <h1 className="hero-title">GOOD LIGHTING, GREAT DESIGN</h1>
-          <button className="hero-button">SHOP LIGHTING</button>
+          <Link to="/lighting" className="hero-button">
+            SHOP LIGHTING
+          </Link>
         </div>
       </div>
     </div>
