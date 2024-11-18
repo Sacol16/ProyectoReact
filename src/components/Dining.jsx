@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import NavBar from './NavBar';
 import '../styles/components/Menus.css';
+import Footer from './Footer';
 
 function Dining(){
   useEffect(() => {
@@ -278,6 +279,7 @@ function Dining(){
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
 }
