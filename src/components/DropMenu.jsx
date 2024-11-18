@@ -72,7 +72,6 @@ const menuData = {
     {
       title: 'BEDROOM FURNITURE',
       items: [
-        'In Stock Bedroom',
         'Beds',
         'Dressers & Chests',
         'Nightstands',
