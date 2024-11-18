@@ -21,6 +21,7 @@ import { auth } from "./components/firebase";
 import Regist from "./components/Regist";
 import Living from "./components/Living";
 import Bedroom from "./components/Bedroom";
+import Dining from "./components/Dining";
 
 function App() {
   const [user, setUser] = useState();
@@ -43,6 +44,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/living" element={<Living />} />
           <Route path="/bedroom" element={<Bedroom />} />
+          <Route path="/dining" element={<Dining />} />
         </Routes>
 
       </div>
