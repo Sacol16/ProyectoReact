@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react';
 import NavBar from './NavBar';
-import '../styles/components/Living.css';
+import '../styles/components/Menus.css';
 
 function Dining(){
-    useEffect(() => {
-        const elements = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-              } else {
-                entry.target.classList.remove('active'); // Elimina la clase cuando sale del viewport
-              }
-            });
-          },
-          { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
-        );
+  useEffect(() => {
+    const elements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
+    );
     
         elements.forEach((el) => observer.observe(el));
     
@@ -32,7 +30,7 @@ function Dining(){
           {/* Subtítulo y Sección Seating */}
           <div className="section reveal">
             <h2 className="subtitle">SEATING</h2>
-            <div className="subgenre">
+            <div className="subgenre" id="dining-chairs">
               <h3 className="subgenre-title">DINING CHAIRS</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -58,7 +56,7 @@ function Dining(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="dining-benches">
               <h3 className="subgenre-title">DINING BENCHES</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -84,7 +82,7 @@ function Dining(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="bar-counter-stools">
               <h3 className="subgenre-title">BAR & COUNTER STOOLS</h3> 
               <div className="images">
                 <div className="image-container reveal">
@@ -115,7 +113,7 @@ function Dining(){
           {/* Subtítulo y Sección Tables & Storage */}
           <div className="section reveal">
             <h2 className="subtitle">TABLES & STORAGE</h2>
-            <div className="subgenre">
+            <div className="subgenre" id="dinning-tables">
               <h3 className="subgenre-title">DINING TABLES</h3> 
               <div className="images">
                 <div className="image-container reveal">
@@ -141,7 +139,7 @@ function Dining(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="buffets-sideboards">
               <h3 className="subgenre-title">BUFFETS & SIDEBOARDS</h3> 
 
               <div className="images">
@@ -168,7 +166,7 @@ function Dining(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="bar-counter-tables">
               <h3 className="subgenre-title">BAR & COUNTER TABLES</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -199,7 +197,7 @@ function Dining(){
         {/* Subtítulo y Sección Tables & Storage */}
          <div className="section reveal">
             <h2 className="subtitle">TABLETOP</h2> 
-            <div className="subgenre">
+            <div className="subgenre" id="dinnerware">
               <h3 className="subgenre-title">DINNERWARE</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -225,7 +223,7 @@ function Dining(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="flatware">
               <h3 className="subgenre-title">FLATWARE</h3> 
 
               <div className="images">
@@ -252,7 +250,7 @@ function Dining(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="glassware">
               <h3 className="subgenre-title">GLASSWARE</h3>
               <div className="images">
                 <div className="image-container reveal">

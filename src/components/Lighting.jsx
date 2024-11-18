@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import NavBar from './NavBar';
-import '../styles/components/Living.css';
+import '../styles/components/Menus.css';
 
 
 function Lighting(){
@@ -11,8 +11,6 @@ function Lighting(){
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-              } else {
-                entry.target.classList.remove('active'); // Elimina la clase cuando sale del viewport
               }
             });
           },
@@ -33,7 +31,7 @@ function Lighting(){
           {/* Subtítulo y Sección Seating */}
           <div className="section reveal">
             <h2 className="subtitle">LIGHTING</h2>
-            <div className="subgenre">
+            <div className="subgenre" id="chandeliers">
               <h3 className="subgenre-title">CHANDELIERS</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -59,7 +57,7 @@ function Lighting(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="pendant">
               <h3 className="subgenre-title">PENDANT</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -85,7 +83,7 @@ function Lighting(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="table-lamps">
               <h3 className="subgenre-title">TABLE LAMPS</h3> 
               <div className="images">
                 <div className="image-container reveal">

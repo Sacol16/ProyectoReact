@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react';
 import NavBar from './NavBar';
-import '../styles/components/Living.css';
+import '../styles/components/Menus.css';
 
 function Bedroom(){
-    useEffect(() => {
-        const elements = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-              } else {
-                entry.target.classList.remove('active'); // Elimina la clase cuando sale del viewport
-              }
-            });
-          },
-          { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
-        );
+  useEffect(() => {
+    const elements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
+    );
     
         elements.forEach((el) => observer.observe(el));
     
@@ -30,7 +28,7 @@ function Bedroom(){
   
         <div className="content">
           {/* Subtítulo y Sección Seating */}
-          <div className="section reveal">
+          <div className="section reveal" id="beds">
             <h2 className="subtitle">BEDROOM FURNITURE</h2>
             <div className="subgenre">
               <h3 className="subgenre-title">BEDS</h3>
@@ -58,7 +56,7 @@ function Bedroom(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="dressers-chests">
               <h3 className="subgenre-title">DRESSERS AND CHESTS</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -84,7 +82,7 @@ function Bedroom(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="nightstands">
               <h3 className="subgenre-title">NIGHTSTANDS</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -115,7 +113,7 @@ function Bedroom(){
           {/* Subtítulo y Sección Tables & Storage */}
           <div className="section reveal">
             <h2 className="subtitle">BEDDING</h2>
-            <div className="subgenre">
+            <div className="subgenre" id="duvet-covers">
               <h3 className="subgenre-title">DUVET COVERS</h3>
               <div className="images">
                 <div className="image-container reveal">
@@ -141,7 +139,7 @@ function Bedroom(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="quilts-bed-blankets">
               <h3 className="subgenre-title">QUILTS AND BED BLANKETS</h3>
 
               <div className="images">
@@ -168,7 +166,7 @@ function Bedroom(){
                 </div>
               </div>
             </div>
-            <div className="subgenre">
+            <div className="subgenre" id="pillow-shams">
               <h3 className="subgenre-title">PILLOW SHAMS</h3>
               <div className="images">
                 <div className="image-container reveal">
