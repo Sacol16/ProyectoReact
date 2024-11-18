@@ -39,8 +39,8 @@ const menuData = {
     {
       title: 'SEATING',
       items: [
-        'In Stock Dining',
         'Dining Chairs',
+        'Dining Benches',
         'Bar & Counter Stools',
       ],
     },
@@ -102,34 +102,25 @@ const menuData = {
   ],
   OUTDOOR: [
     {
-      title: 'OUTDOOR LIVING',
+      title: 'LIGHTING',
       items: [
-        'In Stock Outdoor',
-        'Chairs',
-        'Sofas',
-      ],
-    },
-    {
-      title: 'OUTDOOR DINING',
-      items: [
-        'Dining Tables & Bars',
-        'Dining Chairs',
-        'Bar & Counter Stools',
-      ],
-    },
-    {
-      title: 'OUTDOOR DECOR & CARE',
-      items: [
-        'Fire Pits and Heat Lamps',
-        'Outdoor Planters',
-        'Outdoor Lighting',
+        'Chandeliers',
+        'Pendats',
+        'Table Lamps'
       ],
     },
     {
       image: {
-        src: 'https://hips.hearstapps.com/hmg-prod/images/outer-furniture-sale-1659547573.png',
-        alt: 'Outdoor Furniture',
-        linkText: 'SHOP THE OUTDOOR SALE',
+        src: 'https://m.media-amazon.com/images/I/71N6-chX2LL.jpg',
+        alt: 'Chand',
+        linkText: 'SHOP CHANDELIERS',
+      },
+    },
+    {
+      image: {
+        src: 'https://m.media-amazon.com/images/I/61xxhaeUKIL.jpg',
+        alt: 'lamps',
+        linkText: 'SHOP TABLE LAMPS',
       },
     },
   ],

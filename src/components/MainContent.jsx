@@ -49,14 +49,14 @@ const MainContent = () => {
       {/* Hero Section for Outdoor */}
       <div className="hero-section">
         <img
-          src="https://www.ikea.com/global/assets/range-categorisation/images/three-seat-sofas-10670.jpeg"
-          alt="Outdoor Space"
+          src="https://highemporium.com/cdn/shop/articles/a_hallway_with_recessed_lighting.webp?v=1710682261&width=1100"
+          alt="<lighting> Space"
           className="hero-image"
         />
         <div className="hero-overlay">
-          <p className="hero-subtitle">ENJOY THE OUTDOORS</p>
-          <h1 className="hero-title">FRESH AIR, GREAT DESIGN</h1>
-          <button className="hero-button">SHOP OUTDOOR</button>
+          <p className="hero-subtitle">ENJOY THE LIGHTING</p>
+          <h1 className="hero-title">GOOD LIGHTING, GREAT DESIGN</h1>
+          <button className="hero-button">SHOP LIGHTING</button>
         </div>
       </div>
     </div>

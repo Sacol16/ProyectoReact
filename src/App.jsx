@@ -22,6 +22,7 @@ import Regist from "./components/Regist";
 import Living from "./components/Living";
 import Bedroom from "./components/Bedroom";
 import Dining from "./components/Dining";
+import Outdoor from "./components/Outdoor";
 
 function App() {
   const [user, setUser] = useState();
@@ -45,6 +46,7 @@ function App() {
           <Route path="/living" element={<Living />} />
           <Route path="/bedroom" element={<Bedroom />} />
           <Route path="/dining" element={<Dining />} />
+          <Route path="/outdoor" element={<Outdoor />} />
         </Routes>
 
       </div>
