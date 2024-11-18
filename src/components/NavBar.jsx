@@ -39,7 +39,7 @@ const NavBar = () => {
           <DropdownMenu menu="LIVING" />
         </li>
         <li>
-          <a href="#">DINING</a>
+          <a href="/dining">DINING</a>
           <DropdownMenu menu="DINING" />
         </li>
         <li>
