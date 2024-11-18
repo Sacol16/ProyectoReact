@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import NavBar from './NavBar';
-import '../styles/components/Living.css';
+import '../styles/components/Menus.css';
 
 function Living() {
     useEffect(() => {
@@ -32,7 +32,7 @@ function Living() {
         {/* Subtítulo y Sección Seating */}
         <div className="section reveal">
           <h2 className="subtitle">SEATING</h2>
-          <div className="subgenre">
+          <div className="subgenre" id="sofas">
             <h3 className="subgenre-title">SOFAS</h3>
             <div className="images">
               <div className="image-container reveal">
@@ -58,7 +58,7 @@ function Living() {
               </div>
             </div>
           </div>
-          <div className="subgenre">
+          <div className="subgenre" id="chairs">
             <h3 className="subgenre-title">CHAIRS</h3>
             <div className="images">
               <div className="image-container reveal">
@@ -84,7 +84,7 @@ function Living() {
               </div>
             </div>
           </div>
-          <div className="subgenre">
+          <div className="subgenre" id="sunroom">
             <h3 className="subgenre-title">SUNROOM</h3>
             <div className="images">
               <div className="image-container reveal">
@@ -115,7 +115,7 @@ function Living() {
         {/* Subtítulo y Sección Tables & Storage */}
         <div className="section reveal">
           <h2 className="subtitle">TABLES & STORAGE</h2>
-          <div className="subgenre">
+          <div className="subgenre" id="coffee-tables">
             <h3 className="subgenre-title">COFFEE TABLES</h3>
             <div className="images">
               <div className="image-container reveal">
@@ -141,7 +141,7 @@ function Living() {
               </div>
             </div>
           </div>
-          <div className="subgenre">
+          <div className="subgenre" id="console-tables">
             <h3 className="subgenre-title">CONSOLE TABLES</h3>
             <div className="images">
               <div className="image-container reveal">
@@ -167,7 +167,7 @@ function Living() {
               </div>
             </div>
           </div>
-          <div className="subgenre">
+          <div className="subgenre" id="end-tables">
             <h3 className="subgenre-title">END TABLES</h3>
             <div className="images">
               <div className="image-container reveal">

@@ -7,17 +7,17 @@ const menuData = {
     {
       title: 'SEATING',
       items: [
-        'Sofa',
-        'Chairs',
-        'Sunroom',
+        { name: 'Sofas', id: 'sofas' },
+        { name: 'Chairs', id: 'chairs' },
+        { name: 'Sunroom', id: 'sunroom' },
       ],
     },
     {
       title: 'TABLES & STORAGE',
       items: [
-        'Coffee Tables',
-        'Console Tables',
-        'End Tables',
+        { name: 'Coffee Tables', id: 'coffee-tables' },
+        { name: 'Console Tables', id: 'console-tables' },
+        { name: 'End Tables', id: 'end-tables' },
       ],
     },
     {
@@ -25,6 +25,7 @@ const menuData = {
         src: 'https://maisoncorbeil.com/media/cache/dakzilla_intervention/62059bcf85d52cea16eb85102c6fbeb8/3000x2000-blog-img-117784.jpg',
         alt: 'Accent Chair',
         linkText: 'SHOP ACCENT CHAIRS',
+        id: 'chairs',
       },
     },
     {
@@ -32,6 +33,7 @@ const menuData = {
         src: 'https://www.ikea.com/co/es/images/products/linanaes-sofa-3-puestos-vissle-beige__1013895_pe829449_s5.jpg',
         alt: 'Sofas',
         linkText: 'SHOP SOFAS',
+        id: 'sofas',
       },
     },
   ],
@@ -39,25 +41,25 @@ const menuData = {
     {
       title: 'SEATING',
       items: [
-        'Dining Chairs',
-        'Dining Benches',
-        'Bar & Counter Stools',
+        { name: 'Dining Chairs', id: 'dining-chairs' },
+        { name: 'Dining Benches', id: 'dining-benches' },
+        { name: 'Bar & Counter Stools', id: 'bar-counter-stools' },
       ],
     },
     {
       title: 'TABLES & STORAGE',
       items: [
-        'Dining Tables',
-        'Buffets & Sideboards',
-        'Bar & Counter Tables',
+        { name: 'Dining Tables', id: 'dining-tables' },
+        { name: 'Buffets & Sideboards', id: 'buffets-sideboards' },
+        { name: 'Bar & Counter Tables', id: 'bar-counter-tables' },
       ],
     },
     {
       title: 'TABLETOP',
       items: [
-        'Dinnerware',
-        'Flatware',
-        'Glassware',
+        { name: 'Dinnerware', id: 'dinnerware'},
+        { name: 'Flatware', id: 'flatware'},
+        { name: 'Glassware', id: 'glassware'},
       ],
     },
     {
@@ -65,6 +67,7 @@ const menuData = {
         src: 'https://img.koalaliving.com.au/products/127285/60839cd1-5db2-49b0-bc96-ded802d85274.png',
         alt: 'Dining Chair',
         linkText: 'SHOP DINING CHAIRS',
+        id: 'dining-chairs',
       },
     },
   ],
@@ -72,17 +75,17 @@ const menuData = {
     {
       title: 'BEDROOM FURNITURE',
       items: [
-        'Beds',
-        'Dressers & Chests',
-        'Nightstands',
+        { name: 'Beds', id: 'beds' },
+        { name: 'Dressers & Chests', id: 'dressers-chests' },
+        { name: 'Nightstands', id: 'nightstands' },
       ],
     },
     {
       title: 'BEDDING',
       items: [
-        'Duvet Covers',
-        'Quilts and Bed Blankets',
-        'Pillow Shams',
+        { name: 'Duvet Covers', id: 'duvet-covers' },
+        { name: 'Quilts and Bed Blankets', id: 'quilts-bed-blankets' },
+        { name: 'Pillow Shams', id: 'pillow-shams' },
       ],
     },
     {
@@ -90,13 +93,15 @@ const menuData = {
         src: 'https://bedsbydesignuk.com/wp-content/uploads/2021/04/COGB46STE.1-Medium.jpg',
         alt: 'Beds',
         linkText: 'SHOP BEDS',
+        id: 'beds',
       },
     },
     {
       image: {
-        src: 'https://www.westinstore.com/images/products/lrg/westin-hotel-timeless-bedding-set-HB-1260-02-BE_lrg.webp',
-        alt: 'Bedding',
-        linkText: 'SHOP BEDDING',
+        src: 'https://cdn.arhaus.com/product/StandardV2/45PEARN32LNT_C201120.jpg',
+        alt: 'Nightstands',
+        linkText: 'SHOP NIGHTSTANDS',
+        id: 'nightstands',
       },
     },
   ],
@@ -104,23 +109,25 @@ const menuData = {
     {
       title: 'LIGHTING',
       items: [
-        'Chandeliers',
-        'Pendats',
-        'Table Lamps'
+        { name: 'Chandeliers', id: 'chandeliers' },
+        { name: 'Pendant', id: 'pendant' },
+        { name: 'Table Lamps', id: 'table-lamps' },
       ],
     },
     {
       image: {
-        src: 'https://m.media-amazon.com/images/I/71N6-chX2LL.jpg',
-        alt: 'Chand',
+        src: 'https://cdn.arhaus.com/product/StandardV2/662036H353_EL220418.jpg',
+        alt: 'Chandeliers',
         linkText: 'SHOP CHANDELIERS',
+        id: 'chandeliers',
       },
     },
     {
       image: {
-        src: 'https://m.media-amazon.com/images/I/61xxhaeUKIL.jpg',
-        alt: 'lamps',
+        src: 'https://cdn.arhaus.com/product/StandardV2/760LOLTBKT.jpg',
+        alt: 'Table Lamps',
         linkText: 'SHOP TABLE LAMPS',
+        id: 'table-lamps',
       },
     },
   ],
@@ -128,6 +135,13 @@ const menuData = {
 
 const DropdownMenu = ({ menu }) => {
   const sections = menuData[menu] || [];
+
+  const handleClick = (id) => {
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
     <div className="dropdown_content">
@@ -138,20 +152,25 @@ const DropdownMenu = ({ menu }) => {
             <ul>
               {section.items.map((item, idx) => (
                 <li key={idx}>
-                  <a href="#">{item}</a>
+                  <a href="#" onClick={() => handleClick(item.id)}>
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>
           )}
           {section.image && (
-            <>
+            <div className="image-wrapper">
               <img
                 src={section.image.src}
                 alt={section.image.alt}
                 className="dropdown_image"
+                onClick={() => handleClick(section.image.id)}
               />
-              <a href="#">{section.image.linkText}</a>
-            </>
+              <a href="#" onClick={() => handleClick(section.image.id)}>
+                {section.image.linkText}
+              </a>
+            </div>
           )}
         </div>
       ))}
