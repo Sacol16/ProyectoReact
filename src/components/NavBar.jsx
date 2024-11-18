@@ -81,7 +81,7 @@ const NavBar = () => {
           <DropdownMenu menu="BEDROOM" />
         </li>
         <li>
-          <a href="/outdoor">LIGHTING</a>
+          <a href="/lighting">LIGHTING</a>
           <DropdownMenu menu="OUTDOOR" />
         </li>
       </ul>

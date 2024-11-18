@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 import '../styles/components/Living.css';
 
 
-function Outdoor(){
+function Lighting(){
     useEffect(() => {
         const elements = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver(
@@ -117,4 +117,4 @@ function Outdoor(){
     );
 }
 
-export default Outdoor
+export default Lighting
