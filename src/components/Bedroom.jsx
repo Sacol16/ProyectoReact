@@ -3,20 +3,18 @@ import NavBar from './NavBar';
 import '../styles/components/Menus.css';
 
 function Bedroom(){
-    useEffect(() => {
-        const elements = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-              } else {
-                entry.target.classList.remove('active'); // Elimina la clase cuando sale del viewport
-              }
-            });
-          },
-          { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
-        );
+  useEffect(() => {
+    const elements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
+    );
     
         elements.forEach((el) => observer.observe(el));
     
