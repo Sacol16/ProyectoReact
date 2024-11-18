@@ -35,7 +35,7 @@ const NavBar = () => {
       </div>
       <ul className={`nav_links ${menuOpen ? 'open' : ''}`} id="nav-links">
         <li>
-          <a href="#">LIVING</a>
+          <a href="/living">LIVING</a>
           <DropdownMenu menu="LIVING" />
         </li>
         <li>
@@ -52,11 +52,6 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="nav_btns">
-        <NavButton
-          defaultIcon="ri-search-line"
-          hoverIcon="ri-search-fill"
-          className="btn_sea"
-        />
         <NavButton
           defaultIcon="ri-shopping-bag-line"
           hoverIcon="ri-shopping-bag-fill"
