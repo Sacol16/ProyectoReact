@@ -16,6 +16,7 @@ import Home from "./components/Home";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Profile from "./components/profile";
+import Prof from "./components/Prof";
 import { useState } from "react";
 import { auth } from "./components/firebase";
 import Regist from "./components/Regist";
@@ -41,7 +42,7 @@ function App() {
           />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Regist />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Prof />} />
           <Route path="/home" element={<Home />} />
           <Route path="/living" element={<Living />} />
           <Route path="/bedroom" element={<Bedroom />} />
