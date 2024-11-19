@@ -1,67 +1,109 @@
 /* Ajusta el fondo general de la página */
 .Living {
-    text-align: center;
-    margin-top: 100px; /* Espaciado para evitar que el título sea tapado */
-    background-color: #ffffff; /* Asegura fondo blanco */
-    color: #000000; /* Texto negro para buen contraste */
-  }
-  
-  /* Títulos principales */
-  .main-title {
-    font-size: 4rem;
-    margin: 20px 0;
-    color: #000000; /* Asegura que sea visible */
-  }
-  
-  /* Subtítulos */
-  .subtitle {
-    font-size: 3rem;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #000000;
-  }
-  
-  /* Subgéneros */
-  .subgenre-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: left;
-    color: #000000;
-  }
-  
-  /* Asegura que las imágenes estén bien organizadas */
-  .images {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .images img {
-    width: 430px; /* Tamaño más grande */
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    background-color: #d3d3d3;
-    transition: transform 0.3s ease-in-out; /* Efecto de suavizado para el zoom */
-    margin-right: 35px;
-    margin-left: 10px;
-    margin-bottom: 25px;
-    margin-top: 10px;
-  }
-  
-  .images img:hover {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
-  }
-  
-  /* Fondo oscuro corregido */
-  .section {
-    background-color: #ffffff; /* Asegura fondo blanco */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px; /* Opcional, para un diseño más suave */
-  }
-  
+  text-align: center;
+  margin-top: 100px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Títulos principales */
+.main-title {
+  font-size: 4rem;
+  margin: 20px 0;
+  color: #000000;
+}
+
+/* Subtítulos */
+.subtitle {
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #000000;
+  margin-left: 10px;
+}
+
+/* Subgéneros */
+.subgenre-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #000000;
+  margin-left: 10px;
+}
+
+/* Contenedor de producto */
+.images {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Permite que los elementos salten de línea */
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 430px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Imagen del producto */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Nombre y precio */
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin: 0;
+}
+
+/* Botón */
+.add-to-cart-button {
+  margin-left: auto; /* Mueve el botón a la derecha */
+  background-color: #297a7a;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0f2a2a;
+}
+
   /* Estado inicial de los elementos (ocultos) */
-.reveal {
+  .reveal {
     opacity: 0;
     transform: translateY(50px); /* Posición inicial */
     transition: all 0.6s ease-out; /* Suavidad del efecto */
