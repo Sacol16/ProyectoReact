@@ -47,6 +47,8 @@ img{
 
 a{
     text-decoration: none;
+    padding-right: 1rem;
+    color: var(--beige);
     transition: 0.3s;
 }
 

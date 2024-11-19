@@ -64,6 +64,12 @@ const NavBar = () => {
           <a href="/home">Cozyluxe</a>
         </div>
         <div className="nav_menu_btn" id="menu-btn" onClick={handleMenuClick}>
+          <Link to={isAuthenticated ? "/cart" : "/login"}>
+            <i class="ri-shopping-bag-line"></i>
+          </Link>
+          <Link to={isAuthenticated ? "/profile" : "/login"}>
+            <i class="ri-user-line"></i>
+          </Link>
           <i className={menuOpen ? 'ri-close-line' : 'ri-menu-line'}></i>
         </div>
       </div>
