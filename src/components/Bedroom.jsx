@@ -16,189 +16,319 @@ function Bedroom(){
       },
       { threshold: 0.1 } // Activa el efecto cuando el 20% del elemento es visible
     );
-    
-        elements.forEach((el) => observer.observe(el));
-    
-        return () => observer.disconnect();
-      }, []);
   
-    return (
-      <div className="Living">
-        <NavBar />
-        <h1 className="main-title reveal">BEDROOM</h1>
+      elements.forEach((el) => observer.observe(el));
   
-        <div className="content">
-          {/* Subtítulo y Sección Seating */}
-          <div className="section reveal" id="beds">
-            <h2 className="subtitle">BEDROOM FURNITURE</h2>
-            <div className="subgenre">
-              <h3 className="subgenre-title">BEDS</h3>
-              <div className="images">
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45FINHEXMBQN_BA230522.jpg?preset=Product1920x1440"
-                    alt="Luxury Sofa"
-                  />
-                  <p className="image-text">Finnley Extended Headboard Bed</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45FINGUPHKG_K230606.jpg?preset=Product1920x1440"
-                    alt="Modern Sofa"
-                  />
-                  <p className="image-text">Finnley Bed</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45BODHIOTQCP_A230809.jpg?preset=Product1920x1440"
-                    alt="Classic Sofa"
-                  />
-                  <p className="image-text">Bodhi Canopy Storage Bed</p>
+      return () => observer.disconnect();
+    }, []);
+
+  return (
+    <div className="Living">
+      <NavBar />
+      <h1 className="main-title reveal">BEDROOM</h1>
+
+      <div className="content">
+        {/* Subtítulo y Sección Seating */}
+        <div className="section reveal">
+          <h2 className="subtitle">BEDROOM FURNITURE</h2>
+
+          <div className="subgenre" id="beds">
+            <h3 className="subgenre-title">BEDS</h3>
+            <div className="images">
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45FINHEXMBQN_BA230522.jpg?preset=Product1920x1440"
+                  alt="Finnley Extended Headboard Bed"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Finnley Bed</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
               </div>
-            </div>
-            <div className="subgenre" id="dressers-chests">
-              <h3 className="subgenre-title">DRESSERS AND CHESTS</h3>
-              <div className="images">
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45FINEB6DRKT_C240315.jpg?preset=Product1920x1440"
-                    alt="In Stock Living 1"
-                  />
-                  <p className="image-text">Finnley Six Drawer Dresser</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45DNFMB6DWD_S240712.jpg?preset=Product1920x1440"
-                    alt="In Stock Living 2"
-                  />
-                  <p className="image-text">Danny Six Drawer Dresser</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45PALMS7DR.jpg?preset=Product1920x1440"
-                    alt="In Stock Living 3"
-                  />
-                  <p className="image-text">Palmer Seven Drawer Dresser</p>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/10VBISLXLC_D231018.jpg?preset=Product1920x1440"
+                  alt="Wyller Bed"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Wyller Bed</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
               </div>
-            </div>
-            <div className="subgenre" id="nightstands">
-              <h3 className="subgenre-title">NIGHTSTANDS</h3>
-              <div className="images">
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45PEARN32LNT_C201120.jpg?preset=Product1920x1440"
-                    alt="Sectionals 1"
-                  />
-                  <p className="image-text">Pearson Side Storage Nightstand</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45SULLWOAKNT_L220412.jpg?preset=Product1920x1440"
-                    alt="Sectionals 2"
-                  />
-                  <p className="image-text">Sullivan Closed Nightstand</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/45STMARSONT_BQ220817.jpg?preset=Product1920x1440"
-                    alt="Sectionals 3"
-                  />
-                  <p className="image-text">St. Martin Open Nightstand</p>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45LENNSRLKKT_A230907.jpg?preset=Product1920x1440"
+                  alt="Lennon Bed"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Lennon Bed</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
               </div>
             </div>
           </div>
-  
-          {/* Subtítulo y Sección Tables & Storage */}
-          <div className="section reveal">
-            <h2 className="subtitle">BEDDING</h2>
-            <div className="subgenre" id="duvet-covers">
-              <h3 className="subgenre-title">DUVET COVERS</h3>
-              <div className="images">
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61BCLDNQDSKT_D231208.jpg?preset=Product1920x1440"
-                    alt="Coffee Tables 1"
-                  />
-                  <p className="image-text">Boucle Duvet Set</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61AMLOCQDSKT_C231215.jpg?preset=Product1920x1440"
-                    alt="Coffee Tables 2"
-                  />
-                  <p className="image-text">Amal Linen Duvet Set</p>
-                </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61SOLMSQDSKT_C231208.jpg?preset=Product1920x1440"
-                    alt="Coffee Tables 3"
-                  />
-                  <p className="image-text">Solange Linen Duvet Set</p>
-                </div>
-              </div>
-            </div>
-            <div className="subgenre" id="quilts-bed-blankets">
-              <h3 className="subgenre-title">QUILTS AND BED BLANKETS</h3>
 
-              <div className="images">
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61FFSSIVYBB_A220720.jpg?preset=Product1920x1440"
-                    alt="Console Tables 1"
-                  />
-                  <p className="image-text">Faux Sherpa Bed Blanket</p>
+          <div className="subgenre" id="dressers-chests">
+            <h3 className="subgenre-title">DRESSERS AND CHESTS</h3>
+            <div className="images">
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45FINEB6DRKT_C240315.jpg?preset=Product1920x1440"
+                  alt="Finnley Six Drawer Dresser"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Finnley Six Drawer Dresser</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61MALEANATQQ_D240517.jpg?preset=Product1920x1440"
-                    alt="Console Tables 2"
-                  />
-                  <p className="image-text">Malea Cotton Quilt</p>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45PEARF11DR2_P210224.jpg?preset=Product1920x1440"
+                  alt="Pearson Eleven Drawer Dresser"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Pearson Eleven Drawer Dresser</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61SELVASKYBQ_G231127.jpg?preset=Product1920x1440"
-                    alt="Console Tables 3"
-                  />
-                  <p className="image-text">Selva Bed Blanket</p>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45BROCKT7DR_S201202.jpg?preset=Product1920x1440"
+                  alt="Brock Seven Drawer Dresser"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Brock Seven Drawer Dresser</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
               </div>
             </div>
-            <div className="subgenre" id="pillow-shams">
-              <h3 className="subgenre-title">PILLOW SHAMS</h3>
-              <div className="images">
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61LAVMINKSS_A240820.jpg?preset=Product1920x1440"
-                    alt="End Tables 1"
-                  />
-                  <p className="image-text">Laviss Stripe Sham</p>
+          </div>
+
+          <div className="subgenre" id="nightstands">
+            <h3 className="subgenre-title">NIGHTSTANDS</h3>
+            <div className="images">
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45DARE26CNT_K240515.jpg?preset=Product1920x1440"
+                  alt="Darwyn Nightstand"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Darwyn Nightstand</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61SOLANMNKSS_I231207.jpg?preset=Product1920x1440"
-                    alt="End Tables 2"
-                  />
-                  <p className="image-text">Solange Linen Sham</p>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45AST32HENT_C240621.jpg?preset=Product1920x1440"
+                  alt="Astor Nightstand"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Astor Nightstand</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
-                <div className="image-container reveal">
-                  <img
-                    src="https://cdn.arhaus.com/product/StandardV2/61AMALINDSS_C231127.jpg?preset=Product1920x1440"
-                    alt="End Tables 3"
-                  />
-                  <p className="image-text">Amal Linen Sham</p>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/45STMARSONT_BQ220817.jpg?preset=Product1920x1440"
+                  alt="St. Martin Open Nightstand"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">St. Martin Open Nightstand</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Footer/>
+
+        {/* Subtítulo y Sección Tables & Storage */}
+        <div className="section reveal">
+          <h2 className="subtitle">BEDDING</h2>
+
+          <div className="subgenre" id="duvet-covers">
+            <h3 className="subgenre-title">DUVET COVERS</h3>
+            <div className="images">
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61BCLDNQDSKT_D231208.jpg?preset=Product1920x1440"
+                  alt="Boucle Duvet Set"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Boucle Duvet Set</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61LAVMINKDQ_B240820.jpg?preset=Product1920x1440"
+                  alt="Laviss Stripe Duvet"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Laviss Stripe Duvet</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61TEGNTQDSKT_D231208.jpg?preset=Product1920x1440"
+                  alt="Tegan Duvet Set"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Tegan Duvet Set</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="subgenre" id="quilts-bed-blankets">
+            <h3 className="subgenre-title">QUILTS</h3>
+            <div className="images">
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61MIRAWHTQQ_B231208.jpg?preset=Product1920x1440"
+                  alt="Mira Voile Quilt"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Mira Voile Quilt</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61SELVASKYBQ_G231127.jpg?preset=Product1920x1440"
+                  alt="Selva Bed Blanket"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Selva Bed Blanket</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61MIHALWHTQK_B231208.jpg?preset=Product1920x1440"
+                  alt="Mihali Matelasse Quilt"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Mihali Matelasse Quilt</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="subgenre" id="pillow-shams">
+            <h3 className="subgenre-title">PILLOW SHAMS</h3>
+            <div className="images">
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61AMALINDSS_C231127.jpg?preset=Product1920x1440"
+                  alt="Amal Linen Sham"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Amal Linen Sham</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61BOUCLEDNSS_B231213.jpg?preset=Product1920x1440"
+                  alt="Boucle Sham"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Boucle Sham</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+              <div className="product-card">
+                <img
+                  className="product-image"
+                  src="https://cdn.arhaus.com/product/StandardV2/61COSNATSS_BK240522.jpg?preset=Product1920x1440"
+                  alt="Cosette Sham"
+                />
+                <div className="product-info">
+                  <div>
+                    <p className="product-title">Cosette Sham</p>
+                    <p className="product-price">$399</p>
+                  </div>
+                  <button className="add-to-cart-button">Add to Favorites</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    );
-  
+      <Footer />
+    </div>
+  );
 }
 
 export default Bedroom
