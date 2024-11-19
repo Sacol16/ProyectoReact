@@ -52,42 +52,42 @@ function Living() {
   const products = [
     {
       title: "Malta Leather Sofa",
-      price: "$399",
+      price: "399",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/20SPDGRSBC_BD220921.jpg?preset=Product1920x1440",
       altText: "Malta Leather Sofa",
       category: "sofa",
     },
     {
       title: "Bianca Sofa",
-      price: "$349",
+      price: "349",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/10VBISLXLC_D231018.jpg?preset=Product1920x1440",
       altText: "Bianca Sofa",
       category: "sofa",
     },
     {
       title: "Kipton Wide Arm Leather Sofa",
-      price: "$299",
+      price: "299",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/20893SFSTP_N240925.jpg?preset=Product1920x1440",
       altText: "Kipton Wide Arm Leather Sofa",
       category: "sofa",
     },
     {
       title: "Rudy Leather Swivel Chair",
-      price: "$199",
+      price: "199",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/101129SWBLP_A210412.jpg?preset=Product1920x1440",
       altText: "Rudy Leather Swivel Chair",
       category: "chair",
     },
     {
       title: "Kipton Motion Recliner",
-      price: "$249",
+      price: "249",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/10633R2PL_D240126.jpg?preset=Product1920x1440",
       altText: "Kipton Motion Recliner",
       category: "chair",
     },
     {
       title: "Deacon Leather Swivel Recliner",
-      price: "$279",
+      price: "279",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/20NONSIBGPH_I211109.jpg?preset=Product1920x1440",
       altText: "Deacon Leather Swivel Recliner",
       category: "chair",
@@ -95,84 +95,84 @@ function Living() {
     // Productos Sunroom
     {
       title: "Zoya Sunroom Coffee Table",
-      price: "$259",
+      price: "259",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/70ZOY3SN5CF_C231228.jpg?preset=Product1920x1440",
       altText: "Zoya Sunroom Coffee Table",
       category: "sunroom",
     },
     {
       title: "Valencia Sunroom Lounge Chair",
-      price: "$179",
+      price: "179",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/70VALE3ELCKT_BG240110.jpg?preset=Product1920x1440",
       altText: "Valencia Sunroom Lounge Chair",
       category: "sunroom",
     },
     {
       title: "Nantucket Sunroom Ottoman",
-      price: "$189",
+      price: "189",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/70NANTESOTKT_R231228.jpg?preset=Product1920x1440",
       altText: "Nantucket Sunroom Ottoman",
       category: "sunroom",
     },
     {
       title: "Finnley Coffee Table",
-      price: "$499",
+      price: "499",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35FNHB64CFK_C230821.jpg?preset=Product1920x1440",
       altText: "Finnley Coffee Table",
       category: "coffee-table",
     },
     {
       title: "Ubud Coffee Table",
-      price: "$449",
+      price: "449",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/34UBUD67COF_U220426.jpg?preset=Product1920x1440",
       altText: "Ubud Coffee Table",
       category: "coffee-table",
     },
     {
       title: "Bertogne Coffee Table",
-      price: "$399",
+      price: "399",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35BEREB60COF_L210224.jpg?preset=Product1920x1440",
       altText: "Bertogne Coffee Table",
       category: "coffee-table",
     },
     {
       title: "Vesuvius Console Table",
-      price: "$279",
+      price: "279",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35VESVSCNDEK_BH230508.jpg?preset=Product1920x1440",
       altText: "Vesuvius Console Table",
       category: "console-table",
     },
     {
       title: "Malone Console Table",
-      price: "$229",
+      price: "229",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35MALCMSMCN_A230110.jpg?preset=Product1920x1440",
       altText: "Malone Console Table",
       category: "console-table",
     },
     {
       title: "Telluride Console Table",
-      price: "$249",
+      price: "249",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35TELLCON_I230615.jpg?preset=Product1920x1440",
       altText: "Telluride Console Table",
       category: "console-table",
     },
     {
       title: "Bertogne End Table",
-      price: "$89",
+      price: "89",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35BERHNY24EN_M240614.jpg?preset=Product1920x1440",
       altText: "Bertogne End Table",
       category: "end-table",
     },
     {
       title: "Sullivan Waterfall End Table",
-      price: "$119",
+      price: "119",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35SULSWFEND_BJ211206.jpg?preset=Product1920x1440",
       altText: "Sullivan Waterfall End Table",
       category: "end-table",
     },
     {
       title: "Felton End Table",
-      price: "$99",
+      price: "99",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/35FELT22WEND_BL230927.jpg?preset=Product1920x1440",
       altText: "Felton End Table",
       category: "end-table",
@@ -203,7 +203,7 @@ function Living() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -231,7 +231,7 @@ function Living() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -259,7 +259,7 @@ function Living() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -290,7 +290,7 @@ function Living() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -318,7 +318,7 @@ function Living() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -346,7 +346,7 @@ function Living() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"

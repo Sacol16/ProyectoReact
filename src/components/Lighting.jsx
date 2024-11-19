@@ -53,21 +53,21 @@ function Lighting() {
     // Chandeliers
   {
     title: "Apollo Round Chandelier",
-    price: "$879",
+    price: "879",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/662036H353_EL220418.jpg?preset=Product1920x1440",
     altText: "Apollo Round Chandelier",
     category: "chandeliers",
   },
   {
     title: "Laila Rectangular Chandelier",
-    price: "$679",
+    price: "679",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/652082H0401.jpg?preset=Product1920x1440",
     altText: "Laila Rectangular Chandelier",
     category: "chandeliers",
   },
   {
     title: "Paloma Chandelier",
-    price: "$799",
+    price: "799",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/66594H216_A210507.jpg?preset=Product1920x1440",
     altText: "Paloma Chandelier",
     category: "chandeliers",
@@ -75,21 +75,21 @@ function Lighting() {
   // Pendant Lights
   {
     title: "Latigo Pendant",
-    price: "$599",
+    price: "599",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/660101H184KT_BR210301.jpg?preset=Product1920x1440",
     altText: "Latigo Pendant",
     category: "pendant",
   },
   {
     title: "Watley Cone Pendant",
-    price: "$620",
+    price: "620",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/663507H291_Q211026.jpg?preset=Product1920x1440",
     altText: "Watley Cone Pendant",
     category: "pendant",
   },
   {
     title: "Casen Pendant",
-    price: "$579",
+    price: "579",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/6610204H99KT_CZ240718.jpg?preset=Product1920x1440",
     altText: "Casen Pendant",
     category: "pendant",
@@ -97,21 +97,21 @@ function Lighting() {
   // Table Lamps
   {
     title: "Santiago Table Lamp",
-    price: "$989",
+    price: "989",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/66627L567KT_W220623.jpg?preset=Product1920x1440",
     altText: "Santiago Table Lamp",
     category: "table-lamps",
   },
   {
     title: "Thornton Table Lamp",
-    price: "$969",
+    price: "969",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/663289L111KT_K200716.jpg?preset=Product1920x1440",
     altText: "Thornton Table Lamp",
     category: "table-lamps",
   },
   {
     title: "Anita Table Lamp",
-    price: "$879",
+    price: "879",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/793209L113_BE230405.jpg?preset=Product1920x1440",
     altText: "Anita Table Lamp",
     category: "table-lamps",
@@ -142,7 +142,7 @@ function Lighting() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -170,7 +170,7 @@ function Lighting() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -198,7 +198,7 @@ function Lighting() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"

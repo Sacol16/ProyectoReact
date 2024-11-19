@@ -10,39 +10,48 @@ const ShoppingBag = () => {
   const [favorites, setFavorites] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchFavorites = async () => {
-      try {
-        const user = auth.currentUser;
-        if (user) {
-          const favoritesCollectionRef = collection(
-            db,
-            "Users",
-            user.uid,
-            "Favorites"
-          );
-          const querySnapshot = await getDocs(favoritesCollectionRef);
-          const products = querySnapshot.docs.map((doc) => ({
-            id: doc.id,
-            ...doc.data(),
-          }));
-          setFavorites(products);
-        } else {
-          console.error("User not logged in");
-        }
-      } catch (error) {
-        console.error("Error fetching favorites:", error);
-      } finally {
-        setLoading(false);
+  // Función para cargar los favoritos
+  const fetchFavorites = async () => {
+    setLoading(true); // Mostrar indicador de carga
+    try {
+      const user = auth.currentUser;
+      if (user) {
+        const favoritesCollectionRef = collection(
+          db,
+          "Users",
+          user.uid,
+          "Favorites"
+        );
+        const querySnapshot = await getDocs(favoritesCollectionRef);
+        const products = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setFavorites(products);
+      } else {
+        console.error("User not logged in");
       }
-    };
+    } catch (error) {
+      console.error("Error fetching favorites:", error);
+    } finally {
+      setLoading(false); // Ocultar indicador de carga
+    }
+  };
 
+  // Cargar favoritos al montar el componente
+  useEffect(() => {
     fetchFavorites();
   }, []);
 
   if (loading) return <p>Loading...</p>;
 
-  if (favorites.length === 0) return <p>No products in your shopping bag</p>;
+  if (favorites.length === 0)
+  return (
+    <div className="shopping-bag">
+      <NavBar />
+      <p>No products in your shopping bag</p>
+    </div>
+  );
 
   return (
     <div className="shopping-bag">
@@ -50,7 +59,11 @@ const ShoppingBag = () => {
       <h1>Shopping Bag</h1>
       <div className="products">
         {favorites.map((product) => (
-          <ProductItem key={product.id} product={product} />
+          <ProductItem
+            key={product.id}
+            product={product}
+            onProductRemove={fetchFavorites} // Pasar el callback para recargar los datos
+          />
         ))}
       </div>
       <Summary products={favorites} />
