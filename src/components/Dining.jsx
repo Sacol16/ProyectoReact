@@ -52,42 +52,42 @@ function Dining() {
   const products = [
     {
       title: "Aimee Dining Arm Chair",
-      price: "$98",
+      price: "98",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30AIMCHBKDF_H220509.jpg?preset=Product1920x1440",
       altText: "Aimee Dining Arm Chair",
       category: "dining-chair",
     },
     {
       title: "Mila Dining Chair",
-      price: "$95",
+      price: "95",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30MLACSSNSC_H220112.jpg?preset=Product1920x1440",
       altText: "Mila Dining Chair",
       category: "dining-chair",
     },
     {
       title: "Henry Dining Side Chair",
-      price: "$99",
+      price: "99",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30HRYBKSDSC_O220328.jpg?preset=Product1920x1440",
       altText: "Henry Dining Side Chair",
       category: "dining-chair",
     },
     {
       title: "Bench in Downy Snow",
-      price: "$120",
+      price: "120",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30JAGDSNATBH_BH220816.jpg?preset=Product1920x1440",
       altText: "Bench in Downy Snow",
       category: "dining-bench",
     },
     {
       title: "Gates Banquette",
-      price: "$115",
+      price: "115",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/X8GF110581_A230919.jpg?preset=Product1920x1440",
       altText: "Gates Banquette",
       category: "dining-bench",
     },
     {
       title: "Rhen Dining Bench",
-      price: "$104",
+      price: "104",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/XRJFBEA_D200204.jpg?preset=Product1920x1440",
       altText: "Rhen Dining Bench",
       category: "dining-bench",
@@ -95,21 +95,21 @@ function Dining() {
     // Productos Sunroom
     {
       title: "Jagger Stool in Black",
-      price: "$204",
+      price: "204",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30JAGDWSNCTS_H211122.jpg?preset=Product1920x1440",
       altText: "Jagger Stool in Black",
       category: "bar-counter-stool",
     },
     {
       title: "Noa Stool in Cinder",
-      price: "$230",
+      price: "230",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30NOACDBSNS_J220629.jpg?preset=Product1920x1440",
       altText: "Noa Stool in Cinder",
       category: "bar-counter-stool",
     },
     {
       title: "Bottoni Stool",
-      price: "$205",
+      price: "205",
       imgSrc: "https://cdn.arhaus.com/product/StandardV2/30BOTGTCSBLK_BG220509.jpg?preset=Product1920x1440",
       altText: "Bottoni Stool",
       category: "bar-counter-stool",
@@ -117,21 +117,21 @@ function Dining() {
      // Dining Tables
   {
     title: "Perth Oval Dining Table",
-    price: "$350",
+    price: "350",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/30PRTH96OKTR_H240506.jpg?preset=Product1920x1440",
     altText: "Perth Oval Dining Table",
     category: "dining-table",
   },
   {
     title: "Kensington Stone",
-    price: "$306",
+    price: "306",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/30KEN60RMCKT_M230725.jpg?preset=Product1920x1440",
     altText: "Kensington Stone",
     category: "dining-table",
   },
   {
     title: "Asolo Dining Table",
-    price: "$367",
+    price: "367",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/30ASO70BLDKT_C201119.jpg?preset=Product1920x1440",
     altText: "Asolo Dining Table",
     category: "dining-table",
@@ -140,42 +140,42 @@ function Dining() {
   // Buffets & Sideboards
   {
     title: "Hattie Sideboard",
-    price: "$322",
+    price: "322",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/40HAT70BEMD_B211230.jpg?preset=Product1920x1440",
     altText: "Hattie Sideboard",
     category: "buffet-sideboard",
   },
   {
     title: "Kensington Buffet",
-    price: "$399",
+    price: "399",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/40KEN75WBEMB_CC231128.jpg?preset=Product1920x1440",
     altText: "Kensington Buffet",
     category: "buffet-sideboard",
   },
   {
     title: "Polanco Sideboard",
-    price: "$387",
+    price: "387",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/40POL78SDBR_S221121.jpg?preset=Product1920x1440",
     altText: "Polanco Sideboard",
     category: "buffet-sideboard",
   },
   {
     title: "Enzo Bar Table",
-    price: "$233",
+    price: "233",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/30ENZO28MBKT.jpg?preset=Product1920x1440",
     altText: "Enzo Bar Table",
     category: "bar-counter-table",
   },
   {
     title: "Jacob Counter Table",
-    price: "$267",
+    price: "267",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/30JCB42WLBWC_BZ220403.jpg?preset=Product1920x1440",
     altText: "Jacob Counter Table",
     category: "bar-counter-table",
   },
   {
     title: "Jacob Bistro Table",
-    price: "$300",
+    price: "300",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/30JCB42WLBWB_BV220403.jpg?preset=Product1920x1440",
     altText: "Jacob Bistro Table",
     category: "bar-counter-table",
@@ -183,21 +183,21 @@ function Dining() {
    // Dinnerware
   {
     title: "Skye Dinner Plates",
-    price: "$50",
+    price: "50",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73SKYEDPKT_E210507.jpg?preset=Product1920x1440",
     altText: "Skye Dinner Plates",
     category: "dinnerware",
   },
   {
     title: "Skye Salad Plates",
-    price: "$48",
+    price: "48",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73SKYESPKT_V210507.jpg?preset=Product1920x1440",
     altText: "Skye Salad Plates",
     category: "dinnerware",
   },
   {
     title: "Bela Dinnerware",
-    price: "$76",
+    price: "76",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73BELAKT16_T200128.jpg?preset=Product1920x1440",
     altText: "Bela Dinnerware",
     category: "dinnerware",
@@ -205,21 +205,21 @@ function Dining() {
   // Flatware
   {
     title: "Stag Appetizer Forks",
-    price: "$39",
+    price: "39",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73STAGFORK_O220811.jpg?preset=Product1920x1440",
     altText: "Stag Appetizer Forks",
     category: "flatware",
   },
   {
     title: "Arber Five Piece Place",
-    price: "$49",
+    price: "49",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73RIDGECP_C221103.jpg?preset=Product1920x1440",
     altText: "Arber Five Piece Place",
     category: "flatware",
   },
   {
     title: "Esma Five Piece Place",
-    price: "$45",
+    price: "45",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73ESMACHOC_K240517.jpg?preset=Product1920x1440",
     altText: "Esma Five Piece Place",
     category: "flatware",
@@ -227,21 +227,21 @@ function Dining() {
   // Glassware
   {
     title: "Organic Highball Glasses",
-    price: "$90",
+    price: "90",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73ORGNCHBKT_F210504.jpg?preset=Product1920x1440",
     altText: "Organic Highball Glasses",
     category: "glassware",
   },
   {
     title: "Bela Mugs",
-    price: "$69",
+    price: "69",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73BELAMUGKT.jpg?preset=Product1920x1440",
     altText: "Bela Mugs",
     category: "glassware",
   },
   {
     title: "Seema Cobalt Pitcher",
-    price: "$87",
+    price: "87",
     imgSrc: "https://cdn.arhaus.com/product/StandardV2/73SMAPITCO_BC230126.jpg?preset=Product1920x1440",
     altText: "Seema Cobalt Pitcher",
     category: "glassware",
@@ -272,7 +272,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -300,7 +300,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -328,7 +328,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -359,7 +359,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -387,7 +387,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -415,7 +415,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -446,7 +446,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -474,7 +474,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
@@ -502,7 +502,7 @@ function Dining() {
                   <div className="product-info">
                     <div>
                       <p className="product-title">{product.title}</p>
-                      <p className="product-price">{product.price}</p>
+                      <p className="product-price">${product.price}</p>
                     </div>
                     <button
                       className="add-to-cart-button"
