@@ -24,6 +24,7 @@ import Living from "./components/Living";
 import Bedroom from "./components/Bedroom";
 import Dining from "./components/Dining";
 import Lighting from "./components/Lighting";
+import ShoppingBag from "./components/ShoppingBag";
 
 function App() {
   const [user, setUser] = useState();
@@ -48,6 +49,7 @@ function App() {
           <Route path="/bedroom" element={<Bedroom />} />
           <Route path="/dining" element={<Dining />} />
           <Route path="/lighting" element={<Lighting />} />
+          <Route path="/cart" element={<ShoppingBag />} />
         </Routes>
 
       </div>

@@ -86,11 +86,13 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="nav_btns">
+        <Link to={isAuthenticated ? "/cart" : "/login"}>
         <NavButton
           defaultIcon="ri-shopping-bag-line"
           hoverIcon="ri-shopping-bag-fill"
           className="btn_sho"
         />
+        </Link>
         <h6>{userName}</h6> {/* Aquí se muestra el nombre del usuario */}
         <Link to={isAuthenticated ? "/profile" : "/login"}>
         <NavButton
