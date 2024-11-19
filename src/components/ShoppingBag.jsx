@@ -46,12 +46,14 @@ const ShoppingBag = () => {
   if (loading) return <p>Loading...</p>;
 
   if (favorites.length === 0)
-  return (
-    <div className="shopping-bag">
-      <NavBar />
-      <p>No products in your shopping bag</p>
-    </div>
-  );
+    return (
+      <div className="shopping-bag">
+        <NavBar />
+        <p className="empty-message">
+          You haven't added anything to you favorites yet.
+        </p>
+      </div>
+    );
 
   return (
     <div className="shopping-bag">
