@@ -44,7 +44,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Finnley Bed</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$680</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -58,7 +58,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Wyller Bed</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$720</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -72,7 +72,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Lennon Bed</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$699</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -92,7 +92,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Finnley Six Drawer Dresser</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$800</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -106,7 +106,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Pearson Eleven Drawer Dresser</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$789</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -120,7 +120,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Brock Seven Drawer Dresser</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$769</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -140,7 +140,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Darwyn Nightstand</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$979</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -154,7 +154,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Astor Nightstand</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$879</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -168,7 +168,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">St. Martin Open Nightstand</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$899</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -193,7 +193,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Boucle Duvet Set</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$356</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -207,7 +207,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Laviss Stripe Duvet</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$301</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -221,7 +221,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Tegan Duvet Set</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$315</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -241,7 +241,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Mira Voile Quilt</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$139</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -255,7 +255,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Selva Bed Blanket</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$159</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -269,7 +269,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Mihali Matelasse Quilt</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$100</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -289,7 +289,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Amal Linen Sham</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$119</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -303,7 +303,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Boucle Sham</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$120</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>
@@ -317,7 +317,7 @@ function Bedroom(){
                 <div className="product-info">
                   <div>
                     <p className="product-title">Cosette Sham</p>
-                    <p className="product-price">$399</p>
+                    <p className="product-price">$99</p>
                   </div>
                   <button className="add-to-cart-button">Add to Favorites</button>
                 </div>

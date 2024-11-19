@@ -38,7 +38,9 @@
   flex-wrap: wrap; /* Permite que los elementos salten de línea */
 }
 
+/* Contenedor del producto permanece fijo */
 .product-card {
+  overflow: hidden; /* Esto asegura que el zoom de la imagen no salga del contenedor */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,6 +62,12 @@
   border-radius: 10px;
   object-fit: cover;
   margin-bottom: 10px;
+  transition: transform 0.4s ease-in-out; /* Suaviza la transición del zoom */
+}
+
+/* Zoom interno al pasar el mouse */
+.product-card:hover .product-image {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
 }
 
 /* Nombre y precio */
